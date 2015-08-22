@@ -1,0 +1,52 @@
+body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      /* avoid an excessively wide status text */
+/*#listaLinks{        
+        white-space: pre;
+        resize: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }*/
+
+#tablaLinks{overflow: hidden;}             
+
+#acercaDe { opacity: 0.7; font-size: 82.5%; text-align: right;}
+
+/*.linkEncontrado{
+                -webkit-box-shadow: 1px 1px 6px #000;
+                border: 4px solid #fff;
+                background: #fff;
+                font: 14px Arial;
+               }*/
+#my-tag-list{
+  width: 100%;
+  min-width: 400px;
+  /*resize: vertical;*/
+}   
+
+
+
+.glyphicon-rotate{
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+} 
+
+/*.iconoLinkEnLinea{
+  border: 4px solid #fff;
+  background: green; 
+  text-align: right;
+}
+.iconoLink{
+  border: 4px solid #fff;
+  width: 5%;
+}*/

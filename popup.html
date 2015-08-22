@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Find hosting links!</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <script src="libs/jquery-2.1.4.min.js"></script>
+    <script src="popup.js"></script>
+
+<!-- Boostrap -->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.min.css">  -->
+
+<!-- bootstrap Tags -->
+    <script src='libs/bootstrap-tags/bootstrap-tags.min.js'></script>
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap-tags/bootstrap-tags.css" />
+
+<!-- bootstrap Table
+    <link rel="stylesheet" href="libs/table/bootstrap-table.min.css">
+    <script src="libs/table/bootstrap-table.min.js"></script> -->
+
+<!--URi - library for parse urls -->
+    <script src='libs/URI.min.js'></script>
+<!-- Underscore, library for array -->
+    <script src='libs/underscore-min.js'></script>
+<!-- funciones varias -->
+    <script src='js/funciones.js'></script>
+
+  </head>
+  <body>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h1 class="panel-title">Find hosting links</h1>
+      </div>
+      <div class="panel-body">
+        <div id="my-tag-list" class="tag-list well well-sm"><h4>Ingrese Terminos de Busqueda</h4>
+        </div>
+        <button id='botonCopiar' type="button" class="btn btn-xs btn-primary">Copy links to Clipboard
+           <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+        </button>
+        <div id="tablaLinks">
+            <table class="table table-hover table-condensed table-striped">
+              <thead>
+                <tr class="success">
+                  <th><span class="glyphicon glyphicon-link"></span></th>
+                  <th  id="tabla-titulo">Links Founds</th>
+                </tr>
+              </thead>
+              <tbody id="columnLinks"></tbody>
+            </table>
+        </div>
+        <div id="loading"><img src="images/loading.gif"></img>
+        </div>
+      </div>
+    </div>
+    <div id="acercaDe">
+        Create by <a href="">@jorge-J</a> - 2015.<br>
+        <a href="">This project is realized using...</a>
+    </div>
+  </body>
+</html>
