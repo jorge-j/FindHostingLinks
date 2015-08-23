@@ -11,7 +11,6 @@ chrome.tabs.executeScript(null,{file:"js/getLinks.js"},
             addLink(i,listaLinks[i].text, listaLinks[i].href, listaLinks[i].title);
           };
       $('#loading').html('');
-      inicializaTagsList();
     });
 
 
@@ -82,19 +81,4 @@ $.ajax({
       return false;
   }
 }); 
-}
-
-function inicializaTagsList(){
-    var tags= $('#my-tag-list').tags({
-              tagData: getHostings(listaLinks),
-              suggestions: getHostings(listaLinks),
-              caseInsensitive:true,
-             // suggestions:["Image","Audio","Video","Multimedia","Online","Offline", "Hostings", "File","Rar","Zip","Compresed", "Direct File"],
-              afterAddingTag: function(tag)
-                  { //alert("add: "+tags.getTags() );
-                   },
-              afterDeletingTag: function(tag)
-                  { //alert("del: "+tags.getTags() );
-                   }
-              });
 }
