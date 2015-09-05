@@ -7,11 +7,19 @@ function getHostings(listaLinks){
   for (var i = 0; i < listaLinks.length; i++) {
 
       uri.href( listaLinks[i].href );
-      var url = uri.domain().replace("."+uri.tld(), "");
+      //var url = uri.domain().replace("."+uri.tld(), "");
+      var url = uri.domain();
       links.push(url);
       };
   return _.uniq(links);
 }
+function getHost(url){
+  var uri = new URI();
+  uri.href(url);
+  //return uri.domain().replace("."+uri.tld(), "");
+  return uri.domain();
+}
+
 
 function copyTextToClipboard(text) {
  //nota: solo funciona para Extension Chrome. 
@@ -44,6 +52,11 @@ function formateaUrl(url){
 
   return uri.toString();
 }
+
+
+
+
+
 
 /*function urlExists(url, callback) {
   var xhr = new XMLHttpRequest();
